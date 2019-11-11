@@ -1,9 +1,9 @@
 "use strict"
 
-let knyguKatalogas =
+let knyguSarasas =
 [
     {
-        istorija:[
+        'istorija':[
             {
                 ISBN: '9786098120462',
                 leidimoMetai: '2013',
@@ -34,7 +34,7 @@ let knyguKatalogas =
         ]
     },
     {
-        fantastika: [
+        'fantastika': [
             {
                 ISBN: '9786094273902',
                 leidimoMetai: '2019',
@@ -66,7 +66,7 @@ let knyguKatalogas =
 
     },
     {   
-        detektyvai: [
+        'detektyvai': [
             {
                 ISBN: '9786090138823',
                 leidimoMetai:'2013' ,
@@ -96,14 +96,14 @@ let knyguKatalogas =
             }
         ]
     }
-];
+]
 
-let naujaKnyga = "nauja knyga";
-let knyguSkaicius;
 
-for (let kategorija of knyguKatalogas) {
-  console.log( kategorija );
-  for (let knyga of kategorija) {
-  console.log( knyga );
-}
+for (let knyguKategorija of knyguSarasas)
+{
+  console.log( knyguKategorija ); // prieinam prie knygu kategorijos
+        for (let knyga in knyguKategorija)
+        {
+            console.log( knyga ); // prieinam prie atskiros knygos
+        }
 }
