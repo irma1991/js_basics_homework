@@ -3,18 +3,17 @@
 let knyguKatalogas =
 [
     {
-        knygyKategorija: 'istorija',
-        knygos: [
+        istorija:[
             {
                 ISBN: '9786098120462',
-                leidimoMetai: '2019',
+                leidimoMetai: '2013',
                 pavadinimas: 'Karalienės Bonos virtuvė',
                 puslapiuSkaicius: '220'
             }
             ,
             {
                 ISBN: '9771392155005',
-                leidimoMetai: '2019',
+                leidimoMetai: '2010',
                 pavadinimas: 'Kultūros paminklai 23',
                 puslapiuSkaicius: '208'
             }
@@ -28,15 +27,14 @@ let knyguKatalogas =
             ,
             {
                 ISBN: '9786094664373',
-                leidimoMetai: '2019',
+                leidimoMetai: '2015',
                 pavadinimas: 'Kai Kaunas buvo Kaunas',
                 puslapiuSkaicius: '200'
             }
         ]
     },
     {
-        knygyKategorija: 'fantastika',
-        knygos: [
+        fantastika: [
             {
                 ISBN: '9786094273902',
                 leidimoMetai: '2019',
@@ -53,14 +51,14 @@ let knyguKatalogas =
             ,
             {
                 ISBN: '9789955138303',
-                leidimoMetai: '2019',
+                leidimoMetai: '2014',
                 pavadinimas: 'Sulaikyti žvaigždes',
                 puslapiuSkaicius: '336'
             }
             ,
             {
                 ISBN: '9786090135631',
-                leidimoMetai: '2019',
+                leidimoMetai: '2009',
                 pavadinimas: 'Smėlis',
                 puslapiuSkaicius: '336'
             }
@@ -68,18 +66,17 @@ let knyguKatalogas =
 
     },
     {   
-        knygyKategorija: 'detektyvai',
-        knygos: [
+        detektyvai: [
             {
                 ISBN: '9786090138823',
-                leidimoMetai:'2019' ,
+                leidimoMetai:'2013' ,
                 pavadinimas: 'Avarinis nusileidimas',
                 puslapiuSkaicius: '464'
             }
             ,
             {
                 ISBN: '9789955138556',
-                leidimoMetai: '2019',
+                leidimoMetai: '2017',
                 pavadinimas: 'Gimę nusikalsti',
                 puslapiuSkaicius: '480'
             }
@@ -93,7 +90,7 @@ let knyguKatalogas =
             ,
             {
                 ISBN: '9786094443046',
-                leidimoMetai: '2019',
+                leidimoMetai: '2012',
                 pavadinimas: 'Diena, kai įvyko nelaimė',
                 puslapiuSkaicius: '320'
             }
@@ -101,4 +98,12 @@ let knyguKatalogas =
     }
 ];
 
-console.log(knyguKatalogas);
+let naujaKnyga = "nauja knyga";
+let knyguSkaicius;
+
+for (let kategorija of knyguKatalogas) {
+  console.log( kategorija );
+  for (let knyga of kategorija) {
+  console.log( knyga );
+}
+}
